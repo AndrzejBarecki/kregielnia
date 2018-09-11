@@ -30,5 +30,10 @@ public:
     TenPinBowling(std::string const & name, std::vector<Game> const & game);
     ~TenPinBowling();
     bool loadInputFiles(std::string const & path);
+
     int gamesCntr();
+
+    // TODO:
+    //1. Implement TenPinBowling::printGames function
+    //2. Implement TenPinBowling::saveGames function
 };

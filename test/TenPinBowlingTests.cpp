@@ -63,3 +63,23 @@ TEST_F(TenPinBowlingTests, assertExampleConversion)
     EXPECT_EQ(sumVector(ConvertStringToVector("X|4-|3")), 17);
     EXPECT_EQ(sumVector(ConvertStringToVector("34|X|0-")), 17);
 }
+
+TEST_F(TenPinBowlingTests, assertOutputResultIsValid)
+{
+    //TODO:
+    //1. Validate function TenPinBowling::printGames
+}
+
+TEST_F(TenPinBowlingTests, assertSaveFileIsValid)
+{
+    //TODO:
+    //1. Validate function TenPinBowling::saveGames
+}
+
+TEST_F(TenPinBowlingTests, assertvalidateGameIsValid)
+{
+    //TODO:
+    //1. Validate function TenPinBowling::validateGame
+}
+
+

@@ -23,6 +23,12 @@ bool TenPinBowling::loadInputFiles(std::string const &path)
             //TODO::cout only for debug remove in release version!
             std::cout <<singleLine<<std::endl;
 
+            //TODO:
+            //1. Implement TenPinBowling::getPlayerName function
+            //2. Implement TenPinBowling::getPlayerFrames function
+            //3. Implement TenPinBowling::getScore function (this function should also calculate status)
+            //4. Implement TenPinBowling::validateGame function
+
             auto singlePlayer = std::make_tuple(playerName, playerFrames, score, status);
             game.push_back(singlePlayer);
         }
