@@ -39,6 +39,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(TenPinBowling)
 
+# In CMakeModules I include code coverage for c++
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMakeModules)
+
+if(CMAKE_COMPILER_IS_GNUCXX)
+    include(CodeCoverage)
+    setup_target_for_coverage(${PROJECT_NAME}_coverage tests coverage)
+endif()
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -pthread -g -O0 -fprofile-arcs -ftest-coverage")
+
 add_subdirectory(boost-cmake)
 
 set(SRC_LIST
