@@ -3,17 +3,6 @@ language: cpp
 compiler: gcc
 dist: trusty
 
-matrix:
-  include:
-    - compiler: gcc
-      addons:
-        apt:
-          sources:
-          packages:
-            - g++-6
-            - boost1.6
-            - lcov
-
 before_install:
   # C++17
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
