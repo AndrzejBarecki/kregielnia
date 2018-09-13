@@ -1,4 +1,5 @@
 # kregielnia [![Build Status](https://www.travis-ci.org/gorral/kregielnia.svg?branch=master)](https://www.travis-ci.org/gorral/kregielnia)
+[![codecov](https://codecov.io/gh/gorral/kregielnia/branch/master/graph/badge.svg)](https://codecov.io/gh/gorral/kregielnia)
 
 Obsługa kręgielni
 ========================
